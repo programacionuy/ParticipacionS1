@@ -1,8 +1,16 @@
 package com.grupo4.participacions1
 
+import java.util.Scanner
 
-    fun main(args: Array<String>) {
-        
-        var cantidad=Cadena.contadorVocales("Hola mundo");
-        print(cantidad);
-    }
+
+fun main() {
+
+    val scanner = Scanner(System.`in`)
+    print("Ingrese el texto: ")
+    var texto=scanner.nextLine();
+    var cantidad=Cadena.contadorVocales(texto);
+    print(cantidad);
+
+
+
+}
